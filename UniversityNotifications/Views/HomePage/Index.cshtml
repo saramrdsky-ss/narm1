@@ -1,0 +1,269 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>block</title>
+    <link rel="stylesheet" href="../Contents/CSS/style.css">
+    <link rel="stylesheet" href="http://www.websansite.com/themes/websan/assets/theme/fonts.css">
+    <link rel="stylesheet" href="http://cdn.websansite.com/libs.css">
+    <script src="http://cdn.websansite.com/libs.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+    @*<script src="../Contents/JS/jquery-3.4.1.js"></script>*@
+</head>
+
+<body>
+    <section id="login">
+        <div class="container">
+            <!-- first row -->
+            <div class="row" id="a">
+                <div class="col-6">
+
+                </div>
+                <div class="col-6" id="c">
+                    <button class="btn" id="b" style="color: grey;">بازگشت</button>
+                </div>
+            </div>
+
+            <!-- secound row -->
+            <div class="row" id="d">
+                <div class="col-12 col-lg-6" id="l">
+
+                    <h5 id="e" class="mb-4"> عضویت در خبر نامه</h5>
+
+                    <!-- forms -->
+                    <form action="register" method="get">
+                        <div class="form-group" id="g">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text" id="h">
+                                    <i class="fas fa-users" style="width: 19px;"></i>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control input-style" id="UserNameReg"
+                                   placeholder="نام کاربری"
+                                   style="padding: 15px 18px; border-bottom-right-radius: 0px !important;border-top-right-radius: 0px !important;border: 0.5px solid rgb(233, 233, 233);s">
+                        </div>
+                        <div class="form-group" id="g">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text" id="h">
+                                    <i class="fas fa-unlock" style="width: 19px;"></i>
+                                </div>
+                            </div>
+                            <input type="password" class="form-control input-style" id="PasswordReg"
+                                   placeholder="گذرواژه"
+                                   style="padding: 15px 18px; border-bottom-right-radius: 0px !important;border-top-right-radius: 0px !important;border: 0.5px solid rgb(233, 233, 233);s">
+                        </div>
+                        <div class="form-group" id="g">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text" id="h">
+                                    <i class="fas fa-phone" style="width: 19px;"></i>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control input-style" id="PhoneNumber"
+                                   placeholder="شماره همراه"
+                                   style="padding: 15px 18px; border-bottom-right-radius: 0px !important;border-top-right-radius: 0px !important;border: 0.5px solid rgb(233, 233, 233);s">
+                        </div>
+                        <div class="form-group mb-4" id="g">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text" id="h">
+                                    <i class="fas fa-envelope"
+                                       style="width: 19px;"></i>
+                                </div>
+                            </div>
+                            <input type="email" class="form-control input-style" id="email"
+                                   placeholder="ایمیل"
+                                   style="padding: 15px 18px; border-bottom-right-radius: 0px !important;border-top-right-radius: 0px !important;border: 0.5px solid rgb(233, 233, 233);s">
+                        </div>
+                        <hr class="mt-4">
+                        <div class="form-row mt-3">
+                            <h5 id="e"> نوع کاربر :</h5>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline1" name="UserType" value="1"class="custom-control-input">
+                                <label class="custom-control-label" for="customRadioInline1">
+                                    دانشجو
+                                </label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline2" name="UserType" value="2" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadioInline2">
+                                    کارمند
+                                </label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline3" name="UserType" value="3"
+                                       class="custom-control-input">
+                                <label class="custom-control-label" for="customRadioInline3">
+                                    استاد
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-row mt-4">
+                            <h5 id="e"> علاقه مندی ها :</h5>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline4" name="InterestsType" value="1"
+                                       class="custom-control-input">
+                                <label class="custom-control-label" for="customRadioInline4">
+                                    آموزش
+                                </label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline5" name="InterestsType" value="2"
+                                       class="custom-control-input">
+                                <label class="custom-control-label" for="customRadioInline5">
+                                    خبری
+                                </label>
+                            </div>
+
+                        </div>
+                        <div class="form-row mt-4">
+                            <h5 id="e"> نوع اعلان :</h5>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline7" name="InformType" value="1"
+                                       class="custom-control-input">
+                                <label class="custom-control-label" for="customRadioInline7">
+                                    روزانه
+                                </label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline6" name="InformType" value="2"
+                                       class="custom-control-input">
+                                <label class="custom-control-label" for="customRadioInline6">
+                                    موردی
+                                </label>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <input type="button" class="btn text-white btn-orange" value="ثبت" onclick="RegisterBtn()" id="j" />
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="col-12 col-lg-6" id="k">
+                    <h5 id="e" class="mb-4">ورود مسئول اعلان ها</h5>
+
+                    <!-- forms -->
+                    <form action="register" method="get">
+                        <div class="form-group" id="g">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text" id="h">
+                                    <i class="fas fa-users" style="width: 19px;"></i>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control input-style" id="UserNameLog"
+                                   placeholder="نام کاربری"
+                                   style="padding: 15px 18px; border-bottom-right-radius: 0px !important;border-top-right-radius: 0px !important;border: 0.5px solid rgb(233, 233, 233);s">
+                        </div>
+                        <div class="form-group" id="g">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text" id="h">
+                                    <i class="fas fa-unlock" style="width: 19px;"></i>
+                                </div>
+                            </div>
+                            <input type="password" class="form-control input-style" id="PasswordLog"
+                                   placeholder="گذرواژه"
+                                   style="padding: 15px 18px; border-bottom-right-radius: 0px !important;border-top-right-radius: 0px !important;border: 0.5px solid rgb(233, 233, 233);s">
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <input type="button" class="btn text-white btn-orange" value="ورود" onclick="LoginBtn()" id="j" />
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>
+
+<script type="text/javascript">
+
+    function RegisterBtn() {
+
+        var userType = document.querySelector('input[name="UserType"]:checked').value;
+        var interestsType = document.querySelector('input[name="InterestsType"]:checked').value;
+        var informType = document.querySelector('input[name="InformType"]:checked').value;
+
+        var model = {
+            UserName: $("#UserNameReg").val(),
+            Password: $("#PasswordReg").val(),
+            PhoneNumber: $("#PhoneNumber").val(),
+            Email: $("#email").val(),
+            UserType: userType,
+            Intrests: interestsType,
+            NotificationType: informType
+        };
+
+        $.ajax({
+            type: "POST",
+            url: "../../HomePage/RegisterInNewsLetter",
+            data: JSON.stringify(model),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (msg) {
+                $("#UserNameReg").val("");
+                $("#PasswordReg").val("");
+                $("#PhoneNumber").val("");
+                $("#email").val("");
+                $("input:radio").attr("checked", false);
+                alert("اطلاعات شما با موفقیت ثبت شد.");
+            },
+            error: function () {
+                alert("در هنگام ثبت اطلاعات شما خطایی رخ داده است. لطفا مجددا تلاش کنید.");
+
+            }
+        });
+
+
+    }
+
+
+    function LoginBtn() {
+
+        var model = {
+            UserName: $("#UserNameLog").val(),
+            Password: $("#PasswordLog").val(),
+        };
+
+        $.ajax({
+            type: "POST",
+            url: "../../HomePage/ManagerLogin",
+            data: JSON.stringify(model),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (msg) {
+                $("#UserNameLog").val("");
+                $("#PasswordLog").val("");
+
+                if (msg.Id>0 && msg.TypeId==5) {
+                    window.location.href = '/NewsManegment/NewsManagement?userId=' + msg.Id;
+                }
+                else
+                    alert("نام کاربری یا کلمه عبور اشتباه است.");
+
+
+            },
+            error: function () {
+                alert("نام کاربری یا کلمه عبور اشتباه است.");
+
+            }
+        });
+
+
+    }
+</script>
